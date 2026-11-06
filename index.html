@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4f0">
+  <meta name="description" content="Independent designer creating considered identities and digital experiences.">
+  <title>Alex Morgan — Independent Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f5f4f0;--ink:#242521;--muted:#777972;--line:#d9d9d1;--accent:#6c7768}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}button{font:inherit}::selection{background:#d9e0d3}
+    .wrap{width:min(1480px,calc(100% - 112px));margin:auto}.nav{height:108px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-family:Manrope,sans-serif;font-weight:700;letter-spacing:-.07em;font-size:25px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:42px;font-size:13px}.navlinks a,.contact-link,.project-link{transition:opacity .2s}.navlinks a:hover,.contact-link:hover,.project-link:hover{opacity:.5}.availability{display:flex;align-items:center;gap:9px;font-size:12px;color:#636a60}.dot{height:7px;width:7px;border-radius:50%;background:#8c9b81;box-shadow:0 0 0 4px #e7eae2}
+    .hero{padding:105px 0 100px}.eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;font-weight:600;color:var(--muted)}.hero h1{font-family:Manrope,sans-serif;font-size:clamp(64px,8.8vw,144px);line-height:1.03;letter-spacing:-.09em;font-weight:500;margin:32px 0 48px;max-width:1250px}.hero h1 em{font-style:normal;color:#a0a49b}.hero-bottom{display:flex;align-items:end;justify-content:space-between;gap:40px}.intro{font-size:17px;line-height:1.7;max-width:425px;color:#666961}.scroll-note{font-size:11px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);white-space:nowrap}
+    .section-head{border-top:1px solid var(--line);padding:25px 0 36px;display:flex;justify-content:space-between;align-items:center}.section-head h2{margin:0;font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:600}.section-head span{font-size:12px;color:var(--muted)}.projects{display:grid;grid-template-columns:1fr 1fr;gap:70px 24px;padding-bottom:150px}.project:nth-child(even){transform:translateY(72px)}.project-image{overflow:hidden;aspect-ratio:1.32;background:#e3e2dc}.project-image img{transition:transform .65s cubic-bezier(.2,.7,.2,1)}.project:hover img{transform:scale(1.045)}.project-info{display:flex;align-items:start;justify-content:space-between;gap:20px;padding-top:19px}.project-info h3{font-family:Manrope,sans-serif;font-size:21px;font-weight:500;letter-spacing:-.045em;margin:0 0 7px}.project-info p{margin:0;color:var(--muted);font-size:12px}.project-link{font-size:19px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:10%;padding:110px 0 130px;border-top:1px solid var(--line)}.about h2{font-family:Manrope,sans-serif;font-size:clamp(38px,4.2vw,65px);font-weight:500;line-height:1.18;letter-spacing:-.07em;margin:20px 0}.about-copy{padding-top:38px;max-width:470px}.about-copy p{font-size:17px;line-height:1.85;color:#666961;margin:0 0 22px}.services{display:flex;flex-wrap:wrap;gap:9px;margin-top:32px}.services span{border:1px solid #cbcdc5;border-radius:100px;padding:11px 15px;font-size:12px;color:#61665f}
+    .contact{background:#e9eae4;padding:90px 0 65px}.contact .eyebrow{color:#777e72}.contact h2{font-family:Manrope,sans-serif;font-size:clamp(54px,8vw,118px);line-height:1.08;letter-spacing:-.085em;font-weight:500;margin:28px 0 60px}.contact-link{display:inline-flex;gap:50px;align-items:center;border-bottom:1px solid var(--ink);padding-bottom:12px;font-size:clamp(20px,2.6vw,35px);letter-spacing:-.04em}.footer{margin-top:115px;padding-top:25px;border-top:1px solid #cfd2c9;display:flex;justify-content:space-between;gap:25px;color:#71776e;font-size:12px}.footer-links{display:flex;gap:25px}
+    @media(max-width:900px){.wrap{width:calc(100% - 48px)}.nav{height:82px}.availability{display:none}.hero{padding:80px 0}.hero h1{font-size:clamp(58px,10vw,90px)}.projects{gap:45px 18px}.project:nth-child(even){transform:translateY(35px)}.about{gap:7%}}
+    @media(max-width:600px){.wrap{width:calc(100% - 36px)}.navlinks{gap:18px;font-size:12px}.brand{font-size:22px}.hero{padding:72px 0 80px}.hero h1{font-size:clamp(53px,13.4vw,78px);margin:26px 0 35px}.hero-bottom{display:block}.intro{font-size:15px}.scroll-note{display:none}.projects{grid-template-columns:1fr;gap:45px;padding-bottom:85px}.project:nth-child(even){transform:none}.project-image{aspect-ratio:1.25}.about{grid-template-columns:1fr;padding:75px 0 85px}.about-copy{padding-top:10px}.about-copy p{font-size:15px}.contact{padding:75px 0 35px}.contact h2{margin-bottom:40px}.contact-link{gap:25px}.footer{margin-top:85px;flex-direction:column;gap:15px}.section-head{padding-bottom:25px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project-image img{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top" aria-label="Alex Morgan home">am<span>.</span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact ↗</a></nav>
+    <div class="availability"><span class="dot"></span>Available for select projects</div>
+  </header>
+  <main id="top">
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="eyebrow">Independent designer / Art direction / Digital</div>
+      <h1 id="hero-title">Design with<br><em>intention.</em><br>Made to matter.</h1>
+      <div class="hero-bottom"><p class="intro">I’m Alex, an independent designer crafting distinctive identities and thoughtful digital experiences for people and brands moving culture forward.</p><span class="scroll-note">Scroll to explore ↓</span></div>
+    </section>
+    <section class="wrap" id="work" aria-labelledby="work-title">
+      <div class="section-head"><h2 id="work-title">Selected work</h2><span>01 — 04 / 2023–2026</span></div>
+      <div class="projects">
+        <article class="project"><div class="project-image"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1400&q=85" alt="Minimal product photography of a glass bottle" loading="lazy"></div><div class="project-info"><div><h3>Form & Field</h3><p>Brand identity · Packaging · Art direction</p></div><span class="project-link" aria-hidden="true">↗</span></div></article>
+        <article class="project"><div class="project-image"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85" alt="Warm contemporary architectural interior" loading="lazy"></div><div class="project-info"><div><h3>Atelier House</h3><p>Strategy · Identity · Website</p></div><span class="project-link" aria-hidden="true">↗</span></div></article>
+        <article class="project"><div class="project-image"><img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=1400&q=85" alt="Editorial book and printed material" loading="lazy"></div><div class="project-info"><div><h3>Objects of Note</h3><p>Editorial · Typography · Print</p></div><span class="project-link" aria-hidden="true">↗</span></div></article>
+        <article class="project"><div class="project-image"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=85" alt="Contemporary retail space with considered details" loading="lazy"></div><div class="project-info"><div><h3>Common Ground</h3><p>Brand world · Digital experience · Campaign</p></div><span class="project-link" aria-hidden="true">↗</span></div></article>
+      </div>
+    </section>
+    <section class="wrap about" id="about" aria-labelledby="about-title">
+      <div><div class="eyebrow">A little about me</div><h2 id="about-title">Good design is felt before it’s understood.</h2></div>
+      <div class="about-copy"><p>I believe the most compelling work comes from a balance of curiosity, clarity, and restraint. My approach is rooted in listening closely, asking better questions, and finding the simple idea that makes everything click.</p><p>Working across identity, art direction, and digital design, I partner with ambitious people to build visual worlds that feel both timeless and unmistakably their own.</p><div class="services"><span>Visual identity</span><span>Art direction</span><span>Web design</span><span>Digital experiences</span><span>Editorial</span><span>Creative strategy</span></div></div>
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap"><div class="eyebrow">Have something in mind?</div><h2 id="contact-title">Let’s make<br>something <em style="font-style:normal;color:#8c9587">meaningful.</em></h2><a class="contact-link" href="mailto:hello@example.com?subject=Let's%20work%20together">hello@example.com <span aria-hidden="true">↗</span></a><footer class="footer"><span>© <span id="year">2026</span> Alex Morgan. Designed with intention.</span><div class="footer-links"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance ↗</a><a href="#top">Back to top ↑</a></div></footer></div></section>
+  </main>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
